@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    p {
+        text-align: center;
+    }
+
+    center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    table,
+    td,
+    th {
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    table {
+        width: auto;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ec2-conta,
+    .rds-conta {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 100px;
+
+    }
+
+    .row {
+        width: 100px;
+        padding: 20;
+        border: solid 1px black;
+    }
+
+    .m-item {
+        padding: 20;
+        border: solid 1px black;
+    }
+
+    .orange {
+        background-color: orange;
+        color: white;
+    }
+</style>
+
+
+<body>
+
+
+    <form id="form">
+        <input type="date" id="fromData" name="From">
+        <input type="date" id="startData" name="To">
+        <input type="submit">
+    </form>
+
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script id="myData" src="./data.json"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"
+        integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ=="
+        crossorigin="anonymous">
+        </script>
+
+
+    <div>
+        <div style = "text-align: center; ">
+            <img src="aws.png" alt="Italian Trulli" class="center" >
+        </div>
+            
+        
+        
+
+        <p>EC2 count for selected range</p>
+
+
+        <div class="ec2-conta">
+ 
+        </div>
+
+        <p>RDS count for selected range</p>
+        <div class="rds-conta">
+      
+
+
+        </div>
+        
+
+    </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
